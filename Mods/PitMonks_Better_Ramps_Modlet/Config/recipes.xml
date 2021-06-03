@@ -1,0 +1,11 @@
+
+<!-- PitMonks_Better_Ramps_Modlet -->
+<configs>
+	<append xpath="/recipes" >
+		<!-- Craft Wooden Ramps -->
+		<recipe name="PitMonks_Ramps" count="1">
+			<ingredient name="resourceWood" count="5" />
+		</recipe>
+		<!-- End -->
+	</append>
+</configs>

@@ -1,0 +1,56 @@
+<configs>
+	<append xpath="/recipes">
+	
+<recipe name="autoTurret" count="1" craft_area="workbench" tags="perkGunslinger">  
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceScrapIron" count="20"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceElectricParts,resourceMechanicalParts,resourceScrapIron,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+		
+<recipe name="autoTurret7.62" count="1" craft_area="workbench" tags="perkGunslinger">  
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceScrapIron" count="20"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceElectricParts,resourceMechanicalParts,resourceScrapIron,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+		
+<recipe name="autoTurret44" count="1" craft_area="workbench" tags="perkGunslinger">  
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceScrapIron" count="20"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceElectricParts,resourceMechanicalParts,resourceScrapIron,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="shotgunTurret" count="1" craft_area="workbench" tags="perkGunslinger">  
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceScrapIron" count="20"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="0,1,2,3,4" operation="perc_add" value=".5,.5,.5,.3,.15" tags="resourceElectricParts,resourceMechanicalParts,resourceScrapIron,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="workbench" count="1">
+	<ingredient name="resourceScrapIron" count="25"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceWood" count="20"/>
+</recipe>
+
+	</append>
+</configs>

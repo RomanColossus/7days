@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <ModInfo>
+    <Name value="The speed of hardening of concrete" />
+    <Description value="The hardening of the concrete is 4 times faster" />
+    <Author value="Rakutagin" />
+    <Version value="1.0" />
+    <Website value="" />
+  </ModInfo>
+</xml>

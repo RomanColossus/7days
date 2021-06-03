@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BrazmocksArcheryMod>
+
+<append xpath="/item_modifiers">
+
+<item_modifier name="modGunBowMiniLegolasMagExtender" installable_tags="Bow" modifier_tags="magazine" type="attachment">
+		<property name="UnlockedBy" value="modGunBowMiniLegolasMagExtenderSchematic"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+</item_modifier>
+
+
+<item_modifier name="modGunBowLegolasMagExtender" installable_tags="Bow" modifier_tags="magazine" type="attachment">
+		<property name="UnlockedBy" value="modGunBowLegolasMagExtenderSchematic"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="perc_add" value="4"/>
+					</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+</item_modifier>
+
+</append>
+
+</BrazmocksArcheryMod>

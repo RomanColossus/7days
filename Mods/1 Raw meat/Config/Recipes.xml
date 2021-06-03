@@ -1,0 +1,30 @@
+<configs>
+<!--Food-->
+   <setattribute xpath="//recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']" name="count">1</setattribute>
+   <setattribute xpath="//recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']" name="count">1</setattribute>
+   <setattribute xpath="//recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']" name="count">1</setattribute>
+   <setattribute xpath="//recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']" name="count">1</setattribute>
+   <setattribute xpath="//recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']" name="count">1</setattribute>
+   <setattribute xpath="//recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']" name="count">1</setattribute>
+
+
+
+ <setattribute xpath="//recipe[@name='foodBaconAndEggs' and not(@craft_area)]" name="craft_area">campfire</setattribute>
+ <setattribute xpath="//recipe[@name='foodBaconAndEggs' and @craft_area='campfire']" name="craft_tool">toolCookingPot</setattribute>
+
+ <setattribute xpath="//recipe[@name='foodBoiledMeat' and not(@craft_area)]" name="craft_area">campfire</setattribute>
+ <setattribute xpath="//recipe[@name='foodBoiledMeat' and @craft_area='campfire']" name="craft_tool">toolCookingPot</setattribute>
+
+ <setattribute xpath="//recipe[@name='foodCharredMeat' and not (@craft_area)]" name="craft_area">campfire</setattribute>
+
+ <setattribute xpath="//recipe[@name='foodGrilledMeat' and not(@craft_area)]" name="craft_area">campfire</setattribute>
+ <setattribute xpath="//recipe[@name='foodGrilledMeat' and @craft_area='campfire']" name="craft_tool">toolCookingGrill</setattribute>
+
+ <setattribute xpath="//recipe[@name='foodMeatStew' and not (@craft_area)]" name="craft_area">campfire</setattribute>
+ <setattribute xpath="//recipe[@name='foodMeatStew' and @craft_area='campfire']" name="craft_tool">toolCookingPot</setattribute>
+
+ <setattribute xpath="//recipe[@name='foodSteakAndPotato' and not (@craft_area)]" name="craft_area">campfire</setattribute>
+ <setattribute xpath="//recipe[@name='foodSteakAndPotato' and @craft_area='campfire']" name="craft_tool">toolCookingGrill</setattribute>
+
+</configs>
+

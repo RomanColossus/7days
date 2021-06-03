@@ -1,0 +1,32 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="ReinforcedSteelSpikes" count="1" material_based="true" craft_time="500" craft_area="forge" craft_tool="toolAnvil">
+			<ingredient name="unit_iron" count="230"/>
+			<ingredient name="unit_clay" count="110"/>
+		</recipe>
+		<recipe name="ReinforcedSteelWallTrap" count="1" material_based="true" craft_time="1000" craft_area="forge" craft_tool="toolAnvil">
+			<ingredient name="unit_iron" count="460"/>
+			<ingredient name="unit_clay" count="220"/>
+		</recipe>
+		<recipe name="ReinforcedSteelArmoredWall" count="1" material_based="true" craft_time="800" craft_area="forge" craft_tool="toolAnvil">
+			<ingredient name="unit_iron" count="345"/>
+			<ingredient name="unit_clay" count="165"/>
+		</recipe>
+		<recipe name="ReinforcedSteelSpikedWire" count="1" material_based="true" craft_time="400" craft_area="forge" craft_tool="toolAnvil">
+			<ingredient name="unit_iron" count="69"/>
+			<ingredient name="unit_clay" count="33"/>
+		</recipe>
+		<recipe name="ReinforcedSteelEntanglementWire" count="1" material_based="true" craft_time="300" craft_area="forge" craft_tool="toolAnvil">
+			<ingredient name="unit_iron" count="23"/>
+			<ingredient name="unit_clay" count="11"/>
+		</recipe>
+		<recipe name="ReinforcedSteelCaltrops" count="1" material_based="true" craft_time="500" craft_area="forge" craft_tool="toolAnvil">
+			<ingredient name="unit_iron" count="130"/>
+			<ingredient name="unit_clay" count="65"/>
+		</recipe>
+		<recipe name="ReinforcedSteelGroundSpikes" count="1" material_based="true" craft_time="700" craft_area="forge" craft_tool="toolAnvil">
+			<ingredient name="unit_iron" count="320"/>
+			<ingredient name="unit_clay" count="140"/>
+		</recipe>
+	</append>
+</configs>

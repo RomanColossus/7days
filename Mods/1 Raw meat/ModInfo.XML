@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Personal Mod" />
+		<Description value="Change some values for my personal preferences." />
+		<Author value="ECOTBG" />
+		<Version value="1" />
+		
+	</ModInfo>
+</xml>

@@ -1,0 +1,11 @@
+<configs>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupApparelClothes']">
+		<item name="Night Vision Mod" prob=".05"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT3']">
+		<item name="Night Vision Mod" prob=".05"/>
+	</append>
+	
+</configs>

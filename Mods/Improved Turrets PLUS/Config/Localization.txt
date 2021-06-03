@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+autoTurret7.62,blocks,Block,,,7.62 Turret
+7.62 TurretDesc,blocks,Block,,,"Powerful turret that uses 7.62 Ball ammo with more range and power than standard turrets and a greater field of coverage."
+
+autoTurret44,blocks,Block,,,.44 Magnum Turret
+autoTurret44Desc,blocks,Block,,,"Powerful turret that uses .44 Magnum Ball ammo with more range and power than standard turrets and a greater field of coverage."

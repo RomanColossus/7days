@@ -1,0 +1,169 @@
+<configs>
+
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='MaxDistance']/@value">40</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='RaySpread']/@value">.2</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='EntityDamage']/@value">40</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='BurstRoundCount']/@value">4</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='RequiredPower']/@value">10</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='CooldownTime']/@value">1</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='FireSound']/@value">m60_fire</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='YawRange']/@value">360</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='PitchRange']/@value">360</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='BlockDamage']/@value">0</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='DamageBonus.glass']/@value">0</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='DamageBonus.wood']/@value">0</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='DamageBonus.earth']/@value">0</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='DamageBonus.stone']/@value">0</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='DamageBonus.metal']/@value">0</set>
+<set xpath="/blocks/block[@name='autoTurret']/property[@name='UnlockedBy']/@value">perkGunslinger</set>
+
+<set xpath="/blocks/block[@name='shotgunTurret']/property[@name='MaxDistance']/@value">25</set>
+<set xpath="/blocks/block[@name='shotgunTurret']/property[@name='RaySpread']/@value">2.0</set>
+<set xpath="/blocks/block[@name='shotgunTurret']/property[@name='EntityDamage']/@value">50</set>
+<set xpath="/blocks/block[@name='shotgunTurret']/property[@name='BlockDamage']/@value">0</set>
+<set xpath="/blocks/block[@name='shotgunTurret']/property[@name='UnlockedBy']/@value">perkGunslinger</set>
+
+<set xpath="/blocks/block[@name='solarbank']/property[@name='Material']/@value">Mmetal_hard</set>
+<set xpath="/blocks/block[@name='batterybank']/property[@name='Material']/@value">Mmetal_hard</set>
+
+<append xpath="/blocks">
+    
+<block name="autoTurret7.62">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Ranged"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="DescriptionKey" value="7.62 TurretDesc"/>
+	<property name="DisplayType" value="blockElectricalHardened"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/>  
+	<property name="AmmoItem" value="ammo762mmBulletBall"/>
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="MaxDistance" value="80"/>
+	<property name="EntityDamage" value="50"/>  
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="0.2"/>  
+
+	<property name="BurstRoundCount" value="4"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="1"/>
+	<property name="OvershootTime" value="0.4"/>
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+	<property name="DamageBonus.glass" value="0"/>
+	<property name="DamageBonus.wood" value="0"/>
+	<property name="DamageBonus.earth" value="0"/>
+	<property name="DamageBonus.stone" value="0"/>
+	<property name="DamageBonus.metal" value="0"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+	<property name="FireSound" value="44magnum_fire"/>
+	<property name="RequiredPower" value="10"/>
+	<property name="UnlockedBy" value="perkGunslinger"/>
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,40" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+
+<block name="autoTurret44">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Ranged"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="DescriptionKey" value="autoTurret44Desc"/>
+	<property name="DisplayType" value="blockElectricalHardened"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/>  
+	<property name="AmmoItem" value="ammo44MagnumBulletBall"/>
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="MaxDistance" value="60"/>
+	<property name="EntityDamage" value="45"/>  
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="0.2"/>  
+
+	<property name="BurstRoundCount" value="4"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="1"/>
+	<property name="OvershootTime" value="0.4"/>
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+	<property name="DamageBonus.glass" value="0"/>
+	<property name="DamageBonus.wood" value="0"/>
+	<property name="DamageBonus.earth" value="0"/>
+	<property name="DamageBonus.stone" value="0"/>
+	<property name="DamageBonus.metal" value="0"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+	<property name="FireSound" value="desertvulture_fire"/>
+	<property name="RequiredPower" value="10"/>
+	<property name="UnlockedBy" value="perkGunslinger"/>
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="12"/>
+		<property name="resourceMechanicalParts" value="2"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,40" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+
+	<property name="Stacknumber" value="1000"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+       		
+	</append>  
+         
+</configs>

@@ -1,0 +1,13 @@
+<configs>
+<append xpath="/recipes">
+
+<recipe name="Night Vision Mod" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+	<ingredient name="armorMilitarySetParts" count="5"/>
+	<ingredient name="resourceMilitaryFiber" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+</append>	
+</configs>
